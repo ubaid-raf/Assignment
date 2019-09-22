@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>HTML 5 Doc</title>
+	<style>
+		body,html {
+			padding: 0;
+			margin: 0;
+			height: 100%;
+		}
+		header h1 {
+			text-align:center;
+			font-family: arial, helvetica;
+			font-size: 30px;
+		}
+		header {
+			background-color: #878787;
+			color: #fff; 
+			padding: 20px 40px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		aside{
+			background-color: #AD3DCB;
+			width: 20%;
+	        min-height: 74%;
+			float: right;
+			/* position: fixed; */
+			z-index: 1000;
+			right: 0;
+			top: 20%;
+			bottom: 10%;
+			margin-top: -10px;
+			margin-bottom: -10px;
+			border: 10px solid #878787;
+			border-right: 0px;	
+		}
+		.main{
+			width: 70%;
+			padding: 20px;
+			padding-right: 50px;
+			min-height: 70%;
+		}
+		article{
+			word-wrap: break-word;
+			width: 97%;
+		}
+		article p{
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+		section h1{
+			font-size: 20pt;
+		}
+		footer{
+			/* height: 50; */
+			bottom: 0px;
+			border-top: 10px solid #878787;
+		}
+		nav .navbar{
+			background-color: #AD3DCB;
+			padding: 9px 0;
+			/* display: flex; */
+			/* flex-direction: row; */
+			/* flex-wrap: wrap; */
+			/* justify-content: space-around; */
+			border-bottom: 10px solid #878787;
+		}
+		nav a {
+			color: #fff;
+			font-size: 19px;
+			text-decoration: none;
+			text-align:center;
+			padding:12px 0 13px 0;
+			margin:0;
+			/* border-left: 1px solid #fff;
+			border-right: 1px solid #fff; */
+			display:block;
+		}
+		
+		nav ul {
+			list-style-type:none;
+			width:100%;
+			margin:0 auto;
+			padding:0;
+			text-align:center;
+		}
+		nav a {
+			color:white; 
+		}
+		nav ul li {
+			display: inline-block;
+			/* flex-grow: 1; */
+			align-self: baseline;
+			/* flex: 'flex-grow'; */
+			margin: 0px auto;
+			width:16.667%;
+			margin:0;
+			padding:0;
+		}
+	
+	</style>
+	</head>
+	<body>
+		<header>
+			<h1>Header</h1>
+		</header>
+		<nav>
+			<div class="navbar">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+					<li>
+						<form>
+							<input type="text" name="search">
+							<input type ="submit" value = "Search">
+						</form>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<aside>
+			<h1 style="text-align: center; font-size: 25pt; tex">Related</h1>
+			<ul style="line-height: 50px">
+				<li>
+					<a href="#">
+						Oh, I do like to be beside the seaside
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Oh, I do like to be beside the sea
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Although in the North of England
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						It never stops raining
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Oh well...
+					</a>
+				</li>
+			</ul>
+		</aside>
+		<section class="main">
+			<h1 style="text-align: center; font-size: 25pt">Article Heading</h1>
+			<article>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam omnis eum dolor sequi nihil. Voluptates expedita mollitia culpa, vel eligendi, cum assumenda, sit sint minus praesentium quia error tempore eos?
+				</p>
+				<section>
+					<h1>
+						Subsection
+					</h1>
+					<article>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est obcaecati rerum, quasi aliquam cumque consectetur earum dolorem sequi at, minima ipsam veniam consequuntur facere tempore nemo excepturi molestiae omnis! Hic!<br/><br/>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusantium, sapiente totam dolorum provident itaque nam quis temporibus iusto, debitis quas cum corrupti facere dolor nisi! Repellendus voluptatum eius deserunt!
+					</article>
+				</section>
+				<section>
+					<h1>
+						Another subsection
+					</h1>
+					<article>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quaerat doloribus quod, incidunt vel et iste voluptatem blanditiis odit. Corporis possimus suscipit ut quos? Ullam repellendus esse eaque voluptas minus.<br/><br/>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, inventore expedita, minus non repudiandae assumenda officiis quis pariatur et voluptates est reiciendis consequuntur ullam nihil eaque tenetur illo magni rerum.
+					</article>
+				</section>
+			</article>
+		</section>
+		<footer>
+			<p>Copyright 2050 by nobody. All rights reserved</p>
+		</footer>
+	</body>
+</html>
